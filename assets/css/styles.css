@@ -1,0 +1,176 @@
+body {
+	background: #e2e2e2 url(../images/textures/textured_stripes.png); /* Courtesy of SubtlePatterns.com */
+	text-align: center;
+}
+
+#wrapper {
+	/* Assume height > 960 px; */
+	height: 327px;
+	background: #ffffff url() repeat;
+	margin: 40px auto 40px auto;
+	box-shadow: 0px 1px 2px rgba(20,20,20,0.5);
+	padding: 40px;
+	position: relative;
+	text-align: left;
+	
+}
+
+#bio {
+	width: 50%;
+	position: absolute;
+	left: 40px;
+	margin-top: 15px; 
+}
+
+#links {
+	width: 20%;
+	position: absolute;
+	right: 40px;
+}
+
+/********** HEADER */
+
+#wrapper header {
+	height: 120px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px rgba(175,175,175, 0.5);
+}
+
+#gravatar {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+#gravatar img {
+	box-shadow: 1px 1px 1px rgba(100,100,100, 0.3);
+
+}
+
+/********** LINKS */
+
+li {
+	background: #f3f3f3;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 1px rgba(100,100,100, 0.3);
+	position: relative;
+}
+
+li img {
+	height: 32px;
+}
+
+li div {
+	height: 100%;
+	width: 100%;
+	padding: 6px 6px 1px 6px;
+
+}
+
+li a div span { 
+	position: absolute;
+	top: 17px;
+	margin-left: 6px;
+	font-size: large;
+}
+
+/*********** TYPOGRAPHY */
+
+body {
+	font-family: "Josefin Slab", "Amethysta";
+	font-size: large;
+	color: #303030;
+}
+
+/*********** ENTIRELY AESTHETIC */
+
+#wrapper:before, #wrapper:after
+    {
+     z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width:300px;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);   
+      -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+      -webkit-transform: rotate(-3deg);    
+      -moz-transform: rotate(-3deg);   
+      -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+#wrapper:after
+    {
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    } 
+   
+/*********** MEDIA QUERIES */
+
+
+@media all and (min-width: 1075px) {
+	#wrapper { 
+		width: 860px;
+	}
+}
+
+@media all and (min-width: 520px) and (max-width: 1075px) {
+	#wrapper {
+		width: 80%;
+	}
+}
+
+@media all and (min-width: 520px) and (max-width: 735px) {
+	li {
+		width: 130px;
+	}
+}
+
+@media all and (max-width: 520px) {
+	#wrapper {
+		height: auto;
+		width: 70%;
+	}
+
+	#bio {
+		width: 100%;
+		position: relative;
+		left: 0px;
+		margin-top: 15px;
+	}
+	
+	#links {
+		width: 100%;
+		position: relative;
+		right: inherit;
+	}
+	
+	li {
+		background: inherit;
+		margin-bottom: 10px;
+		box-shadow: inherit;
+		border: 1px dashed #e2e2e2;
+		position: relative;
+	}
+	
+	#gravatar img {
+		height: 32px;
+	}
+	
+	
+}
