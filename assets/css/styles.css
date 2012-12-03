@@ -1,5 +1,5 @@
 body {
-	background: #e2e2e2 url(../images/textures/textured_stripes.png); /* Courtesy of SubtlePatterns.com */
+	background: #e2e2e2 url(../images/textures/textured_stripes.jpg); /* Courtesy of SubtlePatterns.com */
 	text-align: center;
 }
 
@@ -81,7 +81,7 @@ li a div span {
 /*********** TYPOGRAPHY */
 
 body {
-	font-family: "Josefin Slab", "Amethysta";
+	font-family: "Josefin Slab", Cochin, serif;
 	font-size: large;
 	color: #303030;
 }
