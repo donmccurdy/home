@@ -58,22 +58,26 @@ li {
 	margin-bottom: 10px;
 	box-shadow: 1px 1px 1px rgba(100,100,100, 0.3);
 	position: relative;
+	padding: 6px 6px 6px 6px;
 }
 
 li img {
+	vertical-align: middle;
 	height: 32px;
 }
 
-li div {
+li a {
+	display: block;
 	height: 100%;
 	width: 100%;
-	padding: 6px 6px 1px 6px;
-
+	vertical-align: middle;
 }
 
-li a div span { 
-	position: absolute;
-	top: 17px;
+li .link-label {
+	display: inline-block;
+	height:32px;
+	line-height: 38px;
+	vertical-align: middle;
 	margin-left: 6px;
 	font-size: large;
 }
@@ -84,6 +88,10 @@ body {
 	font-family: "Josefin Slab", Cochin, serif;
 	font-size: large;
 	color: #303030;
+}
+
+.email {
+	font-weight: bold;
 }
 
 /*********** ENTIRELY AESTHETIC */

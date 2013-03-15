@@ -4,16 +4,15 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
 	<meta name="description" content="Personal website of Don McCurdy, software engineer and web developer.">
-
-	<title>Don McCurdy | 2012</title>
-	
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="assets/js/scripts.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600' rel='stylesheet' type='text/css'>
-	
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+	<title>Don McCurdy | 2013</title>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
 	
 </head>
 <body>
@@ -26,48 +25,45 @@
 				</a>
 			</figure>
 		</header>
-		<section id="content">
+		<div id="content">
 			<section id="bio">
-				<p>Hi! I am a masters student studying computer science at Washington University in St. Louis.</p>
-				<p>If you'd like to get in touch, please email me at <b>don.r.mccurdy(a)gmail.com</b>.</p>
+				<p>Hi! I am a software engineer working at FindTheBest.</p>
+				<p>If you'd like to get in touch, please email me at <span class="email">don.r.mccurdy(a)gmail.com</span>.</p>
 			</section>
 			<section id="links">
 				<ul>
 					<li>
-						<a href="http://facebook.com/mccurdy">
-							<div>
-								<img src="assets/images/%23303030/facebook.png" alt="facebook-icon" />
-								<span>Facebook</span>
-							</div>
+						<a href="http://facebook.com/mccurdy" data-target="facebook" title="My Facebook profile.">
+							<img src="assets/images/%23303030/facebook.png" alt="facebook-icon" />
+							<span class="link-label">Facebook</span>
 						</a>
 					</li>
 					<li>
-						<a href="http://www.twitter.com/don_mccurdy">
-							<div>
-								<img src="assets/images/%23303030/twitter.png" alt="twitter-icon"/>
-								<span>Twitter</span>
-							</div>
+						<a href="http://www.twitter.com/don_mccurdy" data-target="twitter" title="Follow me on Twitter.">
+							<img src="assets/images/%23303030/twitter.png" alt="twitter-icon"/>
+							<span class="link-label">Twitter</span>
 						</a>
 					</li>
 					<li>
-						<a href="http://www.linkedin.com/in/donmccurdy">
-							<div>
-								<img src="assets/images/%23303030/linkedin.png" alt="linkedin-icon"/>
-								<span>LinkedIn</span>
-							</div>
+						<a href="http://www.linkedin.com/in/donmccurdy" data-target="linkedin" title="My LinkedIn profile.">
+							<img src="assets/images/%23303030/linkedin.png" alt="linkedin-icon"/>
+							<span class="link-label">LinkedIn</span>
 						</a>
 					</li>
 					<li>
-						<a href="http://www.github.com/donmccurdy">
-							<div>
-								<img src="assets/images/%23303030/github.png" alt="github-icon"/>
-								<span>GitHub</span>
-							</div>
+						<a href="http://www.github.com/donmccurdy" data-target="github" title="Fork or follow me on GitHub.">
+							<img src="assets/images/%23303030/github.png" alt="github-icon"/>
+							<span class="link-label">GitHub</span>
 						</a>
 					</li>
 				</ul>
 			</section>
-		</section>
+		</div>
 	</article>
+	<script src="assets/js/scripts.js"></script>
+	<script type="text/javascript" src="assets/js/analytics.js"></script>
 </body>
+
+
+
 </html>
