@@ -1,8 +1,5 @@
-# DonMcCurdy.com
+### DonMcCurdy.com
 
-The source code for my personal website. 
+The source code for my personal website: [DonMcCurdy.com](http://donmccurdy.com).
 
-http://www.donmccurdy.com
-
-Provides links to my relevant profiles (Facebook, LinkedIn, Twitter, and GitHub).
-<br>The profile image on the upper right is dynamically pulled from Gravatar.
+Profile image via [Gravatar.com](http://www.gravatar.com).
