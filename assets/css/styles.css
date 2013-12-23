@@ -1,11 +1,9 @@
 body {
-	background: #e2e2e2 url(../images/textures/textured_stripes.jpg); /* Courtesy of SubtlePatterns.com */
-	text-align: center;
+	background: #f8f8f8 url(../images/textures/debut_light.png); /* Courtesy of SubtlePatterns.com */
 }
 
 #wrapper {
-	/* Assume height > 960 px; */
-	height: 327px;
+	width: 475px;
 	background: #ffffff url() repeat;
 	margin: 40px auto 40px auto;
 	box-shadow: 0px 1px 2px rgba(20,20,20,0.5);
@@ -16,21 +14,11 @@ body {
 }
 
 #bio {
-	width: 50%;
-	position: absolute;
-	left: 40px;
-}
-
-#links {
-	position: absolute;
-	right: 40px;
+	margin-top: 35px;
+	line-height: 1.4em;
 }
 
 /********** HEADER */
-
-#wrapper header {
-	height: 120px;
-}
 
 h1 {
 	font-weight: 400;
@@ -39,43 +27,36 @@ h1 {
 }
 
 #gravatar {
+	display: none;
 	position: absolute;
 	top: 40px;
 	right: 40px;
 }
 
 #gravatar img {
+	height: 32px;
 	box-shadow: 1px 1px 1px rgba(100,100,100, 0.3);
-
 }
 
 /********** LINKS */
 
+#links {
+	margin-top: 30px;
+}
+
 li {
-	margin-bottom: 10px;
+	display: inline-block;
 	position: relative;
-	padding: 6px 6px 6px 6px;
+}
+
+li + li {
+	padding-left: 10px;
 }
 
 li img {
 	vertical-align: middle;
 	height: 32px;
-}
-
-li a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	vertical-align: middle;
-}
-
-li .link-label {
-	display: inline-block;
-	height:32px;
-	line-height: 38px;
-	vertical-align: middle;
-	margin-left: 6px;
-	font-size: large;
+	height: 32px;
 }
 
 /*********** TYPOGRAPHY */
@@ -90,95 +71,57 @@ body {
 	font-weight: bold;
 }
 
-/*********** ENTIRELY AESTHETIC */
-
-#wrapper:before, #wrapper:after
-    {
-     z-index: -1;
-      position: absolute;
-      content: "";
-      bottom: 15px;
-      left: 10px;
-      width: 50%;
-      top: 80%;
-      max-width:300px;
-      background: rgba(0, 0, 0, 0.7);
-      -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);   
-      -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-      box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-      -webkit-transform: rotate(-3deg);    
-      -moz-transform: rotate(-3deg);   
-      -o-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-    }
-
-#wrapper:after
-    {
-      -webkit-transform: rotate(3deg);
-      -moz-transform: rotate(3deg);
-      -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-      transform: rotate(3deg);
-      right: 10px;
-      left: auto;
-    } 
-   
-/*********** MEDIA QUERIES */
-
-
-@media all and (min-width: 1075px) {
-	#wrapper { 
-		width: 860px;
-	}
-}
-
-@media all and (min-width: 520px) and (max-width: 1075px) {
-	#wrapper {
-		width: 80%;
-	}
-}
-
-@media all and (min-width: 520px) and (max-width: 735px) {
-	li {
-		width: 130px;
-	}
-}
+/*********** MOBILE */
 
 @media all and (max-width: 520px) {
 	#wrapper {
 		margin-top: 5%;
 		height: auto;
-		width: 70%;
+		width: 90%;
 	}
 
-	#bio {
-		width: 100%;
-		position: relative;
-		left: 0px;
-		margin-top: 15px;
-	}
-	
-	#links {
-		width: 100%;
-		position: relative;
-		right: inherit;
-	}
-	
-	li {
-		background: inherit;
-		margin-bottom: 10px;
-		box-shadow: inherit;
-		border: 1px dashed #e2e2e2;
-		position: relative;
-	}
-	
-	#gravatar img {
-		height: 32px;
-	}
-
-	header h1 {
+	h1 {
 		max-width: 280px;
 	}	
-	
+}
+
+/*********** RETINA */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	body {
+		background-image: url(../images/textures/debut_light_@2X.png);
+    	background-size: 200px 200px;
+	}
+}
+
+/*********** ENTIRELY AESTHETIC */
+
+#wrapper:before, #wrapper:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width:300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);   
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);    
+	-moz-transform: rotate(-3deg);   
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#wrapper:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
 }
