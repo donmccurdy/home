@@ -14,7 +14,7 @@ body {
 }
 
 #bio {
-	margin-top: 35px;
+	margin-top: 25px;
 	line-height: 1.4em;
 }
 
@@ -46,17 +46,28 @@ h1 {
 
 li {
 	display: inline-block;
-	position: relative;
 }
 
 li + li {
 	padding-left: 10px;
 }
 
-li img {
-	vertical-align: middle;
+.icon.icon-facebook { background: url(/assets/images/%23303030/facebook.png); }
+.icon.icon-twitter { background: url(/assets/images/%23303030/twitter.png); }
+.icon.icon-linkedin { background: url(/assets/images/%23303030/linkedin.png); }
+.icon.icon-github { background: url(/assets/images/%23303030/github.png); }
+
+li .icon.icon {
+	display: inline-block;
 	height: 32px;
-	height: 32px;
+	width: 32px;
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+}
+
+.icon-anchor-text {
+	position: absolute;
+	left: 9999px;
 }
 
 /*********** TYPOGRAPHY */
