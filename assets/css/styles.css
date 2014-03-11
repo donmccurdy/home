@@ -67,7 +67,7 @@ li .icon.icon {
 
 .icon-anchor-text {
 	position: absolute;
-	left: 9999px;
+	left: -9999px;
 }
 
 /*********** TYPOGRAPHY */
