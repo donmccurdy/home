@@ -82,6 +82,14 @@ body {
 	font-weight: bold;
 }
 
+.link {
+	color: #6C819E;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
 /*********** MOBILE */
 
 @media all and (max-width: 520px) {
