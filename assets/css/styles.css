@@ -52,10 +52,10 @@ li + li {
 	padding-left: 10px;
 }
 
-.icon.icon-facebook { background: url(/assets/images/%23303030/facebook.png); }
-.icon.icon-twitter { background: url(/assets/images/%23303030/twitter.png); }
-.icon.icon-linkedin { background: url(/assets/images/%23303030/linkedin.png); }
-.icon.icon-github { background: url(/assets/images/%23303030/github.png); }
+.icon.icon-facebook { background: url(/assets/images/grey/facebook.png); }
+.icon.icon-twitter { background: url(/assets/images/grey/twitter.png); }
+.icon.icon-linkedin { background: url(/assets/images/grey/linkedin.png); }
+.icon.icon-github { background: url(/assets/images/grey/github.png); }
 
 li .icon.icon {
 	display: inline-block;
